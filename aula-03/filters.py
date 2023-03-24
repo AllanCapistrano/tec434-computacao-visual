@@ -7,7 +7,7 @@ image      = cv2.imread(str(image_path))
 
 cv2.imshow('Loaded Image', image)
 
-low_pass = cv2.blur(image,(9,9))
+low_pass = cv2.blur(image,(3,3))
 
 cv2.imshow('Low Pass Filter', low_pass)
 
