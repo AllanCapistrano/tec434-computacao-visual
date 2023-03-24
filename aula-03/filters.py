@@ -2,8 +2,8 @@ import cv2
 from numpy import array
 from pathlib import Path
 
-image_path = Path('images/len_gray.png')
-image      = cv2.imread(str(image_path))
+image_path = Path('images/len_std.png')
+image      = cv2.imread(str(image_path), 0)
 
 cv2.imshow('Loaded Image', image)
 
